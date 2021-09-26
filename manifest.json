@@ -1,0 +1,23 @@
+{
+  "name": "Relaxo",
+  "description": "This extension customizes google new tab page",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "./background.js"
+  },
+  "permissions": ["storage", "activeTab", "scripting","tabs", "webRequest"],
+  "host_permissions":[
+    "*://*.google.com/"
+  ],
+  "chrome_url_overrides" : {
+    "newtab": "./public/index.html"
+  },
+  "icons": {
+    "16": "/images/16.png",
+    "32": "/images/32.png",
+    "48": "/images/48.png",
+    "128": "/images/128.png"
+  }
+
+}

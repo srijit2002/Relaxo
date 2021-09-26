@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Stick+No+Bills:wght@700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+image {
+  width: 100%;
+  display: inline-block;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  outline: none;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+}
+
+.done::before {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 2%;
+  right: 2%;
+  width: 200%;
+  height: 1px;
+  background-color: #fff;
+  user-select: none;
+  pointer-events: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: url("https://source.unsplash.com/2000x1100/?nature,water") no-repeat center center/cover;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+
+.clock {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60vh;
+  height: 60vh;
+  backdrop-filter: blur(5px);
+  border-radius: 50%;
+  border: 3px solid #fff;
+  display: grid;
+  place-items: center;
+  font-family: "Stick No Bills", sans-serif;
+}
+.clock__display {
+  font-size: 125px;
+  font-weight: 900;
+  color: #fff;
+}
+
+.quate {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  color: #fff;
+  font-weight: 400;
+}
+.quate sub {
+  font-size: 10px;
+  margin-left: 0.5em;
+  font-weight: 300;
+}
+
+.task {
+  font-size: 10px;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 14px;
+  border-radius: 0.2em;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 500ms;
+}
+.task:hover, .task:focus, .task:focus-within {
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 1;
+}
+.task__container {
+  margin-top: 0.5em;
+  display: flex;
+  flex-direction: column;
+  max-height: 120px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.task__container::-webkit-scrollbar {
+  display: none;
+}
+.task__input {
+  display: flex;
+}
+.task__input input {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 8px;
+}
+.task__single {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5em 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0.5em 1em;
+}
+.task__single:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.task__single h3 {
+  width: 70%;
+  max-width: 20ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  font-weight: 300;
+  font-size: 13px;
+}
+.task__single input {
+  width: 17px;
+  height: 17px;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+.btn {
+  min-width: 50px;
+  font-size: 14px;
+  padding: 0.15em 0.25em;
+  cursor: pointer;
+}
+
+input {
+  font-size: 13px;
+  color: #fff;
+}
+
+/*# sourceMappingURL=main.css.map */

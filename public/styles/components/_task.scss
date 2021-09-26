@@ -1,0 +1,69 @@
+.task {
+  font-size:10px;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width:250px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0 0 0 /0.1);
+  padding:14px;
+  border-radius: 0.2em;
+  color: #fff;
+  cursor: pointer;
+  opacity:0.5;
+  transition: all 500ms;
+  &:hover,
+  &:focus,
+  &:focus-within {
+    background-color: rgba(0 0 0 /0.7);
+    opacity:1;
+  }
+  &__container {
+    margin-top: 0.5em;
+    display: flex;
+    flex-direction: column;
+    max-height:120px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  &__input {
+    display: flex;
+    input {
+      background-color: rgba(0 0 0 /0.2);
+      padding:8px;
+    }
+  }
+  &__single {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5em 0;
+    background-color: rgba(0 0 0 /0.2);
+    padding: 0.5em 1em;
+    &:hover{
+        background-color: rgba(0 0 0 /0.5);
+       
+    }
+    h3 {
+      width: 70%;
+      max-width: 20ch;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 1;
+      font-weight: 300;
+      font-size:13px;
+    }
+    input {
+      width: 17px;
+      height: 17px;
+      padding: 0.5em;
+      cursor: pointer;
+    }
+  }
+}

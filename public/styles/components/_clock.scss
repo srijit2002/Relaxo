@@ -1,0 +1,19 @@
+.clock{
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:60vh;
+    height:60vh;
+    backdrop-filter: blur(5px);
+    border-radius: 50%;
+    border:3px solid #fff;
+    display: grid;
+    place-items: center;
+    font-family: 'Stick No Bills', sans-serif;
+    &__display{
+        font-size:125px;
+        font-weight:900;
+        color:#fff;
+    }
+}

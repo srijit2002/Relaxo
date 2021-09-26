@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+image {
+  width: 100%;
+  display: inline-block;
+}
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  outline: none;
+}
+input,
+textarea,
+select {
+  width:100%;
+}
+
+.done{
+  &::before{
+    content:"";
+    position: absolute;
+    transform:translate(-50%,-50%);
+    top:50%;
+    left:2%;
+    right:2%;
+    width:200%;
+    height:1px;
+    background-color: #fff;
+    user-select: none;
+    pointer-events: none;
+  }
+}
