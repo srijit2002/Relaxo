@@ -26,5 +26,5 @@ Before Applying Extension           |  After Applying Extension
 
 1)To-do list with beautiful animation <br/>
 2)Motivational Quate <br/>
-3)Watch<br/>
+3)Clock<br/>
 
